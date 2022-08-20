@@ -1,8 +1,14 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { SModal, CModal, LModal} from '../components/modules/Modal';
 
 export default function Home() {
+  const [openSModal, setOpenSModal] = useState(false);
+  const [openCModal, setOpenCModal] = useState(false);
+  const [openLModal, setOpenLModal] = useState(false);
+
   return (
     <div>
       <Head>
@@ -38,7 +44,7 @@ export default function Home() {
       </div>
 
       {/* NFT Tier Section */}
-      <div className='w-full h-screen py-8 flex-column justify-center items-center'>
+      <div className='w-full h-screen py-8 flex-column justify-center items-center static'>
         <div className='w-full text-center'>
             <h1 className='md:text-5xl sm:text-4xl'>Tier Donor Options</h1>
         </div>
@@ -47,7 +53,8 @@ export default function Home() {
                 <h3 className='sm:text-xl md:text-lg text-indigo-700 uppercase'>tier 1</h3>
                 <h1 className='text-3xl'>DOer Supporter</h1>
                 <p className='py-4'>Lorem Ipsum is ismply dummy text of the printing and typsetting industry.  Lorem Ipsum has been the industry's standard dfdfd</p>
-                <button type='button' className='w-44 h-8 bg-indigo-500 shadow-none' id='btn1'>Learn More -></button>
+                <button type='button' className='bg-indigo-400 text-white rounded-md px-8 py-2 text-base font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-none uppercase' onClick={() => setOpenSModal(true)}>Mint!</button>
+                {openSModal && <SModal closeModal={setOpenSModal} />}
             </div>
             <div className='w-56'>
                 <Image src="/../public/assets/imgs/Tier-1.png" alt="/" width="400" height="700" />
@@ -62,7 +69,8 @@ export default function Home() {
                 <h3 className='text-lg text-indigo-700 uppercase'>Tier 2</h3>
                 <h1 className='text-3xl'>DOer Champion</h1>
                 <p className='py-4'>Lorem Ipsum is ismply dummy text of the printing and typsetting industry.  Lorem Ipsum has been the industry's standard dfdfd</p>
-                <button type='button' className='w-44 h-8 bg-indigo-500 shadow-none'>Learn More -></button>
+                <button type='button' className='bg-indigo-400 text-white rounded-md px-8 py-2 text-base font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-none uppercase' onClick={() => setOpenCModal(true)}>Mint!</button>
+                {openCModal && <CModal closeModal={setOpenCModal} />}
             </div>
         </div>
 
@@ -71,7 +79,8 @@ export default function Home() {
                 <h3 className='text-lg text-indigo-700 uppercase'>tier 1</h3>
                 <h1 className='text-3xl'>DOer Legend</h1>
                 <p className='py-4'>Lorem Ipsum is ismply dummy text of the printing and typsetting industry.  Lorem Ipsum has been the industry's standard dfdfd</p>
-                <button type='button' className='bg-indigo-400 text-white rounded-md px-8 py-2 text-base font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-none' id='open-btn'>Learn More -></button>
+                <button type='button' className='bg-indigo-400 text-white rounded-md px-8 py-2 text-base font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 shadow-none uppercase' onClick={() => setOpenLModal(true)}>Mint!</button>
+                {openLModal && <LModal closeModal={setOpenLModal} />}
             </div>
             <div className='w-56'>
                 <Image src="/../public/assets/imgs/Tier-3.png" alt="/" width="400" height="700" />
@@ -88,6 +97,7 @@ export default function Home() {
             </div>
         </div>
       </div>
+
     </div>
   )
 }
