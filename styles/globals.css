@@ -602,3 +602,11 @@
     transform: translateY(-500px);
   }
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #stars,
+  #stars2,
+  #stars3 {
+      animation: none;
+  }
+}
