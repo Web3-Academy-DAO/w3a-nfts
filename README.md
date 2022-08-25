@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="top"></div>
 
-## Getting Started
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-First, run the development server:
+<h3 align="center">Daily Scheduler</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+  <p align="center">
+    Create a third-party API: Daily Scheduler
+    <br />
+    <a href="https://github.com/Web3-Academy-DAO/w3a-nfts"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Web3-Academy-DAO/w3a-nfts">View Demo</a>
+    ·
+    <a href="https://github.com/Web3-Academy-DAO/w3a-nfts/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Web3-Academy-DAO/w3a-nfts/issues">Request Feature</a>
+  </p>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built With
 
-## Deploy on Vercel
+* [![JavaScript][JavaScript.js]][JavaScript-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+* [![Moment][Moment.js]][Moment-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+[product-screenshot]: /public/assets/imgs/screenshot.png
+[JavaScript.js]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[JavaScript-url]: https://www.javascript.com/
+[Bootstrap.com]: https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com
+[Moment.js]: https://img.shields.io/badge/Moment-%292929AD.svg?style=for-the-badge&logo=Moment&logoColor=white
+[Moment-url]: https://momentjs.com/ 
