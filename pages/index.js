@@ -10,7 +10,7 @@ export default function Home() {
   const [openLModal, setOpenLModal] = useState(false);
 
   return (
-    <div className='w-screen'>
+    <div className='w-screen xl:w-3/4'>
       <Head>
         <title>W3A DAO NFT Mint</title> 
         <meta name='description' content='Donation page for Web3 Acadmey DAO' />
@@ -50,7 +50,7 @@ export default function Home() {
                 {openSModal && <SModal closeModal={setOpenSModal} />}
             </div>
             <div className='w-screen flex justify-center items-center'>
-                <Image src="/../public/assets/imgs/Tier-1.png" alt="/" width="500" height="500" />
+                <Image src="/../public/assets/imgs/Tier-1.png" alt="/" width="500" height="500" className='' />
             </div>
         </div>
 
