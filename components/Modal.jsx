@@ -28,20 +28,13 @@ function SModal({ closeModal }) {
               </svg>
             </button>
           </div>
-          <div className="py-8 text-center" id="title">
-            <h1 className="text-3xl">DOER Supporter</h1>
-          </div>
-          <div className="">{/* Embed HERE */}</div>
-          <div
-            className="w-full h-12 flex justify-center items-center"
-            id="footer"
-          >
-            <button
-              className="bg-purple-500 text-white rounded-md px-8 py-2 mt-2 text-base font-bold hover:bg-purple-200 active:bg-purple-300 uppercase"
-              onClick={() => closeModal(false)}
-            >
-              Mint
-            </button>
+          <div className="">
+            <iframe
+              className="mx-auto"
+              src="https://gateway.ipfscdn.io/ipfs/Qma5FgmS9s3hkQrURfG4XDnh5Dxp9Fx9ZjBYkPFUNdQwfi/edition-drop.html?contract=0xCa6F66b0B920e69C128a2176e61D284E5c09Cbce&chainId=80001&tokenId=1&theme=dark&primaryColor=purple&secondaryColor=red"
+              width="320"
+              height="600"
+            ></iframe>
           </div>
         </div>
       </div>
