@@ -79,7 +79,7 @@ export default function Home() {
               className="bg-purple-500 text-white rounded-md px-8 py-2 mt-2 text-base font-bold hover:bg-purple-200 active:bg-purple-300 uppercase"
               onClick={() => setOpenSModal(true)}
             >
-              Mint
+              Mint for 0.1 ETH
             </button>
             {openSModal && <SModal closeModal={setOpenSModal} />}
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
           </div>
           <div className="w-96">
             <h3 className="sm:text-xl md:text-lg text-purple-100 uppercase">
-              Tier 1
+              Tier 2
             </h3>
             <h2 className="text-3xl">DOER Champion</h2>
             <p className="py-4">
@@ -117,7 +117,7 @@ export default function Home() {
               className="bg-purple-500 text-white rounded-md px-8 py-2 mt-2 text-base font-bold hover:bg-purple-200 active:bg-purple-300 uppercase"
               onClick={() => setOpenCModal(true)}
             >
-              Mint
+              Mint for 0.25 ETH
             </button>
             {openCModal && <CModal closeModal={setOpenCModal} />}
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
         <div className="w-full h-1/3 flex justify-center items-center">
           <div className="w-96">
             <h3 className="sm:text-xl md:text-lg text-purple-100 uppercase">
-              Tier 1
+              Tier 3
             </h3>
             <h2 className="text-3xl">DOER Legend</h2>
             <p className="py-4">
@@ -140,7 +140,7 @@ export default function Home() {
               className="bg-purple-500 text-white rounded-md px-8 py-2 mt-2 text-base font-bold hover:bg-purple-200 active:bg-purple-300 uppercase"
               onClick={() => setOpenLModal(true)}
             >
-              Mint
+              Mint for 0.5 ETH
             </button>
             {openLModal && <LModal closeModal={setOpenLModal} />}
           </div>
@@ -156,7 +156,19 @@ export default function Home() {
       </div>
       {/* Footer Section */}
       <div className="bg-gradient-to-t from-purple-800 to-black pb-24 pt-36 ">
-        <div className="text-center ">
+        <div className="">
+          <div className="text-center">
+            <h1 className="text-4xl max-w-xl mx-auto">Web3 Academy DAO thanks you</h1>
+            <p className="text-sm pt-2 pb-8 mt-8 max-w-xl mx-auto">
+              All funds raised from this NFT mint will go directly to the DAO
+              treasury, a multisig safe secured by 8 members of the DAO. The
+              funds will go towards paying for various resources and tools
+              needed to enable the DAO to take flight and progress towards
+              supporting entrepreneurs and creators across the Web3 Ecosystem.
+            </p>
+          </div>
+        </div>
+        <div className="text-center pt-24">
           <Image
             src="/../public/assets/imgs/h-logo.png"
             alt="Web3 Academy DAO logo"
@@ -165,22 +177,8 @@ export default function Home() {
           />
         </div>
       </div>
-      {/* <div className="w-screen h-[500px] pt-48 bg-gradient-to-b from-black to-purple-800">
-        <div className="">
-          <div className="text-center">
-            <h1 className="uppercase text-4xl">Web3 academy dao</h1>
-            <p className="text-sm pt-2 pb-8">
-              A DOER Legend holder shows that you are here for the mission and
-              putting your money where your mouth is! Those who mint this NFT
-              will forever be remembered as a legend of the genesis of Web3
-              Academy DAO.
-            </p>
-            <button disabled={openSModal || openCModal  || openLModal } className="bg-purple-500 hover:bg-purple-200 active:bg-purple-300  text-white rounded-md px-8 py-2 w-64 h-12 uppercase shadow-none text-xl">
-              join our discord
-            </button>
-          </div>
-        </div>
-      </div> */}
+
+      {/*  */}
     </>
   );
 }
