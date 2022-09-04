@@ -28,18 +28,21 @@ export default function Home() {
           width="150"
           height="90"
         />
-        <div className="justify-between lg:flex sm:flex-column gap-16">
+        <div className="justify-between lg:flex sm:flex-column gap-16 mb-20">
           <div className="justify-center items-center">
             <h1 className="mt-20 text-center md:text-left leading-tight">
               <span className="font-light">Become a W3A DAO </span>
               <br />
               Genesis Donator
             </h1>
-            <p className="mt-10 max-w-2xl text-center mb-20 md:text-left">
+            <p className="mt-10 max-w-2xl text-center md:text-left">
               Web3 Academy DAO is a tokenized community on a mission to create
               resources, products and services to better support the wave of
               entrepreneurs, businesses and creators moving into Web3 over the
               coming decade.
+            </p>
+            <p className="text-3xl font-light mt-8">
+              #AreYouReady?
             </p>
           </div>
           <div className="md:w-1/2 flex-column justify-center items-center">
@@ -49,9 +52,6 @@ export default function Home() {
               width="1000"
               height="500"
             />
-            <p className="text-3xl font-light text-gray-40 text-center mt-20">
-              #AreYouReady?
-            </p>
           </div>
         </div>
       </div>
@@ -62,6 +62,10 @@ export default function Home() {
         <br />
         Genesis Donators Collection
       </h2>
+      <p className="mt-8 text-center max-w-md mx-auto">
+        We’re ALL Web3 DOers! The question now is if you’re a Supporter, a
+        Champion or a Legend.
+      </p>
       <div className="mt-10 flex-column justify-center items-center mb-20 px-5">
         <div className="w-full h-1/3 flex justify-center items-center mb-20">
           <div className="w-96">
@@ -158,7 +162,9 @@ export default function Home() {
       <div className="bg-gradient-to-t from-purple-800 to-black pb-24 pt-36 ">
         <div className="">
           <div className="text-center">
-            <h1 className="text-4xl max-w-xl mx-auto">Web3 Academy DAO thanks you</h1>
+            <h1 className="text-4xl max-w-xl mx-auto">
+              Web3 Academy DAO Thanks You
+            </h1>
             <p className="text-sm pt-2 pb-8 mt-8 max-w-xl mx-auto">
               All funds raised from this NFT mint will go directly to the DAO
               treasury, a multisig safe secured by 8 members of the DAO. The
