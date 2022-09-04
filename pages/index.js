@@ -83,7 +83,7 @@ export default function Home() {
               className="bg-purple-500 text-white rounded-md px-8 py-2 mt-2 text-base font-bold hover:bg-purple-200 active:bg-purple-300 uppercase"
               onClick={() => setOpenSModal(true)}
             >
-              Mint for 0.1 ETH
+              Mint for 0.025 ETH
             </button>
             {openSModal && <SModal closeModal={setOpenSModal} />}
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
               className="bg-purple-500 text-white rounded-md px-8 py-2 mt-2 text-base font-bold hover:bg-purple-200 active:bg-purple-300 uppercase"
               onClick={() => setOpenCModal(true)}
             >
-              Mint for 0.25 ETH
+              Mint for 0.1 ETH
             </button>
             {openCModal && <CModal closeModal={setOpenCModal} />}
           </div>
