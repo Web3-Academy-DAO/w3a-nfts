@@ -35,10 +35,15 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
   theme: {
     extend: {
       colors: {
-        "purple": {
+        purple: {
           DEFAULT: "#7A00FF",
           50: "#DAB8FF",
           100: "#CFA3FF",

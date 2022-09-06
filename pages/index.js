@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import { SModal, CModal, LModal } from "../components/Modal";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Web3Acadmey DAO Donations</title>
         <meta name="description" content="Donation page for Web3 Acadmey DAO" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.ico" />
       </Head>
 
       {/* Header Section */}
@@ -22,8 +22,8 @@ export default function Home() {
       <div id="stars2" className="z-0"></div>
       <div id="stars3" className="z-0"></div>
       <div className="px-10 py-10 md:px-20 bg-gradient-to-b from-purple-800 to-black ">
-        <Image
-          src="/../public/assets/imgs/h-logo.png"
+        <img
+          src="./assets/imgs/h-logo.png"
           alt="Web3 Academy DAO logo"
           width="150"
           height="90"
@@ -46,8 +46,8 @@ export default function Home() {
             </p>
           </div>
           <div className="md:w-1/2 flex-column justify-center items-center">
-            <Image
-              src="/../public/assets/imgs/logos.png"
+            <img
+              src="./assets/imgs/logos.png"
               alt="DOER Icons"
               width="1000"
               height="500"
@@ -88,8 +88,8 @@ export default function Home() {
             {openSModal && <SModal closeModal={setOpenSModal} />}
           </div>
           <div className="w-56">
-            <Image
-              src="/../public/assets/imgs/Tier-1.png"
+            <img
+              src="./assets/imgs/Tier-1.png"
               alt="/"
               width="400"
               height="450"
@@ -99,8 +99,8 @@ export default function Home() {
 
         <div className="w-full h-1/3 flex justify-center items-center mb-20">
           <div className="w-56">
-            <Image
-              src="/../public/assets/imgs/Tier-2.png"
+            <img
+              src="./assets/imgs/Tier-2.png"
               alt="/"
               width="400"
               height="450"
@@ -149,8 +149,8 @@ export default function Home() {
             {openLModal && <LModal closeModal={setOpenLModal} />}
           </div>
           <div className="w-56">
-            <Image
-              src="/../public/assets/imgs/Tier-3.png"
+            <img
+              src="./assets/imgs/Tier-3.png"
               alt="/"
               width="400"
               height="450"
@@ -175,8 +175,8 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center pt-24">
-          <Image
-            src="/../public/assets/imgs/h-logo.png"
+          <img
+            src="./assets/imgs/h-logo.png"
             alt="Web3 Academy DAO logo"
             width="150"
             height="90"
